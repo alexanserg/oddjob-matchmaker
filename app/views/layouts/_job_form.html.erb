@@ -1,0 +1,13 @@
+<%= render "layouts/errors", :object => @job %>
+
+<%= form_for @job do |f| %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :timerange %>
+  <%= f.text_field :timerange %>
+  <%= f.label :pricerange %>
+  <%= f.text_field :pricerange %>
+  <%= f.label :contact %>
+  <%= f.text_field :contact %>
+  <%= f.submit %>
+<% end %>

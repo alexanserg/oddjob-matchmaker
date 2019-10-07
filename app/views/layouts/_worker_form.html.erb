@@ -1,0 +1,13 @@
+<%= render "layouts/errors", :object => @worker %>
+
+<%= form_for @worker do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :specialty %>
+  <%= f.text_field :specialty %>
+  <%= f.label :availability %>
+  <%= f.text_field :availability %>
+  <%= f.label :contact %>
+  <%= f.text_field :contact %>
+  <%= f.submit %>
+<% end %>

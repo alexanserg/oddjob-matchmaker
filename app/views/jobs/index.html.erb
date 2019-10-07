@@ -1,0 +1,16 @@
+<h1>Available Odd Jobs:</h1>
+
+
+
+<% if @jobs.any? %>
+<ul>
+  <% @jobs.each do |job| %>
+  <li><%= link_to job.description, job_path(job) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>There are no odd jobs yet.</p>
+<% end %>
+
+
+<p><%= link_to "Add your oddjob", new_job_path %></p>
