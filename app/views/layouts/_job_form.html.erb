@@ -1,13 +1,19 @@
 <%= render "layouts/job_errors", :object => @job %>
 
+<div class="form">
 <%= form_for @job do |f| %>
   <%= f.label :description %>
-  <%= f.text_field :description %>
-  <%= f.label :timerange %>
-  <%= f.text_field :timerange %>
+  <%= f.text_field :description %> <br>
+  <br>
   <%= f.label :pricerange %>
-  <%= f.text_field :pricerange %>
+  <%= f.text_field :pricerange %> <br>
+  <br>
+  <%= f.label :timerange %>
+  <%= f.text_field :timerange %> <br>
+  <br>
   <%= f.label :contact %>
-  <%= f.text_field :contact %>
+  <%= f.text_field :contact %> <br>
+  <br>
   <%= f.submit %>
 <% end %>
+</div>

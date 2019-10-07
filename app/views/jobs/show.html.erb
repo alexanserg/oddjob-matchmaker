@@ -4,7 +4,7 @@
 <h3>Contact: <%= @job.contact %></h3>
 
 
-
+<div class="link">
 <p><%= link_to "Edit", edit_job_path(@job) %></p>
 <p><%= link_to "Delete", job_path(@job),
                          :data => {:confirm => "You sure?",
@@ -13,3 +13,4 @@
 <p><%= link_to "Return to jobs", jobs_path %></p>
 
 <p><%= link_to "Return To Home Page", root_path %></p>
+</div>
