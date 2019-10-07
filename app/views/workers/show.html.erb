@@ -1,0 +1,13 @@
+<h1><%= @worker.name %></h1>
+<h3>Specialty: $<%= @worker.specialty%></h3>
+<h3>availability: <%= @worker.availability %></h3>
+<h3>Contact: <%= @worker.contact %></h3>
+
+
+
+<p><%= link_to "Edit", edit_worker_path(@worker) %></p>
+<p><%= link_to "Delete", worker_path(@worker),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
+
+<p><%= link_to "Return to workers", workers_path %></p>

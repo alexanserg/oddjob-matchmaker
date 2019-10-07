@@ -1,0 +1,16 @@
+<h1>Available Workers:</h1>
+
+
+
+<% if @workers.any? %>
+<ul>
+  <% @workers.each do |worker| %>
+  <li><%= link_to worker.name, worker_path(worker) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>There are no workers yet.</p>
+<% end %>
+
+
+<p><%= link_to "Add your worker", new_worker_path %></p>
