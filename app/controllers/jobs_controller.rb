@@ -2,7 +2,7 @@ class JobsController < ApplicationController
 
   def index
 
-    @recent_jobs = Job.three_most_recent
+    @recent_jobs = Job.ten_most_recent
     @jobs = Job.all
     render :index
   end
@@ -52,7 +52,7 @@ class JobsController < ApplicationController
 
   private
     def job_params
-      params.require(:job).permit(:description, :timerange, :timerange, :contact)
+      params.require(:job).permit(:description, :pricerange, :timerange, :contact)
     end
 
 end

@@ -2,7 +2,7 @@ class WorkersController < ApplicationController
 
   def index
 
-    @recent_workers = Worker.three_most_recent
+    @recent_workers = Worker.ten_most_recent
     @workers = Worker.all
     render :index
   end
