@@ -2,8 +2,8 @@ class JobsController < ApplicationController
 
   def index
 
-    @recent_jobs = Job.ten_most_recent
-    @jobs = Job.all
+
+    @jobs = Job.order(created_at: :desc)
     render :index
   end
 

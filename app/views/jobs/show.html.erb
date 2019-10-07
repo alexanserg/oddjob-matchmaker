@@ -1,5 +1,5 @@
 <h1><%= @job.description %></h1>
-<h3>Price Range: $<%= @job.pricerange%></h3>
+<h3>Price Range: <%= @job.pricerange%></h3>
 <h3>Time Range: <%= @job.timerange %></h3>
 <h3>Contact: <%= @job.contact %></h3>
 
@@ -11,3 +11,5 @@
                                    :method => "delete"} %></p>
 
 <p><%= link_to "Return to jobs", jobs_path %></p>
+
+<p><%= link_to "Return To Home Page", root_path %></p>

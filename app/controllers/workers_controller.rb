@@ -2,8 +2,8 @@ class WorkersController < ApplicationController
 
   def index
 
-    @recent_workers = Worker.ten_most_recent
-    @workers = Worker.all
+
+    @workers = Worker.order(created_at: :desc)
     render :index
   end
 
@@ -52,7 +52,7 @@ class WorkersController < ApplicationController
 
   private
     def worker_params
-      params.require(:worker).permit(:name, :specialty, :availabilty, :contact)
+      params.require(:worker).permit(:name, :specialty, :availability, :contact)
     end
 
 end

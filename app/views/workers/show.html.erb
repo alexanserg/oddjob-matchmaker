@@ -1,5 +1,5 @@
 <h1><%= @worker.name %></h1>
-<h3>Specialty: $<%= @worker.specialty%></h3>
+<h3>Specialty: <%= @worker.specialty%></h3>
 <h3>availability: <%= @worker.availability %></h3>
 <h3>Contact: <%= @worker.contact %></h3>
 
@@ -11,3 +11,5 @@
                                    :method => "delete"} %></p>
 
 <p><%= link_to "Return to workers", workers_path %></p>
+
+<p><%= link_to "Return To Home Page", root_path %></p>
