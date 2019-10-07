@@ -1,4 +1,4 @@
-class CreateWorkers < ActiveRecord::Migration[6.0]
+class CreateWorkers < ActiveRecord::Migration[5.2]
   def change
     create_table :workers do |t|
       t.column(:name, :string)
