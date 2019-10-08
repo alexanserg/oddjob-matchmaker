@@ -1,7 +1,7 @@
 body {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,40,32,1) 6%, rgba(0,212,255,1) 100%);
-
+  color: #e6f2ff;
   font-family: monospace;
 }
 
@@ -11,8 +11,15 @@ ul {
 }
 
 h1  {
-  margin-left: 250px;
+  text-align: center;
   font-style: bold;
+  font-size: 80px;
+  margin-bottom: 140px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 150 px;
 }
 
 .form {
@@ -21,4 +28,14 @@ h1  {
 
 .visible {
   color: rgb(2,0,36);
+}
+
+a:link, a:visited {
+  background-color: #537EE2;
+  color: white;
+  margin: 10px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
