@@ -6,7 +6,7 @@
 _This RESTful application is built using Ruby on Rails. It allows CRUD functionality for workers and jobs. For demonstration purposes there is a seed tree to fill out the database._
 
 ### Setup:
-* Clone the repository found at https://github.com/alexanserg/marios_fabulous_emporium.git
+* Clone the repository found at https://github.com/alexanserg/oddjob-matchmaker.git
 * In the terminal run the following commands from the project root
 * $ bundle
 * $ rake db:create
